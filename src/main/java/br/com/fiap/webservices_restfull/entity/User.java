@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 
 @Entity
+@Table(name = "TB_USER")
 @SequenceGenerator(name = "user", sequenceName = "SQ_USER", allocationSize = 1)
 public class User {
     @Id
